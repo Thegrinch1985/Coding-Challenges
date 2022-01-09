@@ -1,11 +1,11 @@
-let findSumOfTwo = function(A, val) {
+let findSumOfTwo = function(arrayOfNumbers, target) {
     let foundValues = new Set();
-    for (let a in A) {
-      if (foundValues.has(val - A[a])) {
+    for (let a in arrayOfNumbers) {
+      if (foundValues.has(target - arrayOfNumbers[a])) {
         return true;
       }
   
-      foundValues.add(A[a]);
+      foundValues.add(arrayOfNumbers[a]);
     }
   
     return false;
